@@ -452,15 +452,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_neues_dokument_erstellen">Neues Dokument erstellen</a></li>
 <li><a href="#_text_schreiben_und_grösse_anpassen">Text schreiben und Grösse anpassen</a></li>
 <li><a href="#_technik_nr_1_schnittmaske">Technik Nr. 1 - Schnittmaske</a></li>
-<li><a href="#_technik_nr_2">Technik Nr. 2</a></li>
-<li><a href="#_brushes_pinsel">Brushes (Pinsel)</a></li>
-<li><a href="#_ebene_verformen">Ebene Verformen</a></li>
-<li><a href="#_schatten_hinzufügen">Schatten hinzufügen</a></li>
-<li><a href="#_textur_hinzufügen">Textur hinzufügen</a></li>
-<li><a href="#_fahne_oder_logo_was_auch_immer_du_möchtest_im_rauch_platzieren">Fahne (oder Logo, was auch immer du möchtest) im Rauch platzieren</a></li>
-<li><a href="#_zusatz_color_lookup_hinzufügen">Zusatz: Color-Lookup hinzufügen</a></li>
-<li><a href="#_text_hinzufügen">Text hinzufügen</a></li>
-<li><a href="#_datei_exportieren">Datei exportieren</a></li>
+<li><a href="#_technik_nr_2_masken">Technik Nr. 2 - Masken</a>
+<ul class="sectlevel3">
+<li><a href="#_maske_erstellen">Maske erstellen</a></li>
+</ul>
+</li>
+<li><a href="#_technik_nr_3_fülloptionen">Technik Nr. 3 - Fülloptionen</a></li>
+<li><a href="#_die_kombination_aus_allen_drei_techniken">Die Kombination aus allen drei Techniken</a></li>
 </ul>
 </div>
 </div>
@@ -481,7 +479,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_neues_dokument_erstellen">Neues Dokument erstellen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Für diese Übung erstellen wir ein neues Dokument mit 3840x2160px (4K) und schwarzem Hintergrund. Die Auflösung von 72ppi kann übernommen werden.</p>
+<p>Für diese Übung musst du ein neues Dokument mit 3840x2160px (4K) und schwarzem Hintergrund erstellen. Die Auflösung von 72ppi kann übernommen werden.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -494,7 +492,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_text_schreiben_und_grösse_anpassen">Text schreiben und Grösse anpassen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Schreibe ein Text deiner Wahl, in diesem Beispiel wird mit dem Wort "DESIGN" in der Schriftart Roboto Black gearbeitet.</p>
+<p>Schreibe ein Text deiner Wahl, in diesem Beispiel wird mit dem Wort <code>DESIGN</code> in der Schriftart <code>Roboto Black</code> gearbeitet.</p>
 </div>
 <div class="paragraph">
 <p>Die Grösse kann mit <code>Ctrl+T</code> / <code>Cmd+T</code> angepasst werden.</p>
@@ -510,7 +508,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_technik_nr_1_schnittmaske">Technik Nr. 1 - Schnittmaske</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Als erstes muss die Textur Concrete.jpg importiert werden.</p>
+<p>Als erstes muss die Textur <code>Concrete.jpg</code> importiert werden.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -529,7 +527,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>Oder mit <code>Alt</code> / <code>Option</code> - Klick zwischen den Ebenen</p>
+<p>Oder mit einem <code>Alt</code> / <code>Option</code> - Klick zwischen den Ebenen.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -545,7 +543,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>Der Vorteil dieser Schnittmaskten-Methode besteht darin, dass alles was über der Hauptebene ist, ebenfalls in die Schnittmaske aufgenommen wird.</p>
+<p>Der Vorteil dieser Schnittmasken-Methode besteht darin, dass alles was sich über der Hauptebene befindet, ebenfalls in die Schnittmaske aufgenommen werden kann. So können auch die Modi der einzelnen Ebenen angepasst werden um spezielle Effekte zu erstellen (z.B. Multiplizieren usw.)</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -555,163 +553,84 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_technik_nr_2">Technik Nr. 2</h2>
+<h2 id="_technik_nr_2_masken">Technik Nr. 2 - Masken</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Das Poster soll eine Hintergrundfarbe haben&#8230;&#8203; Dazu muss eine neue Ebene mit einer Farbfüllung erstellt werden.</p>
+<p>Als erstes wird ein Hintergrundbild bzw. eine Hintergrundtextur benötigt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/createSolid.gif" alt="createSolid">
+<img src="images/metal.gif" alt="metal">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_maske_erstellen">Maske erstellen</h4>
+<div class="paragraph">
+<p>Erstelle eine Maske aus der Schrift-Ebene. Diese kann mit dem Pinsel bearbeitet werden, wobei Weiss die Pixel sichtbar macht und schwarz die Pixel abdeckt.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/mask.gif" alt="mask">
+</div>
+</div>
+<div class="paragraph">
+<p>Die Maske kann aber auch aus einem Bild bestehen, hierzu muss die Maske mit gedrückter <code>Alt</code> / <code>Option</code> Taste angeklickt werden:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/altMask.gif" alt="altMask">
+</div>
+</div>
+<div class="paragraph">
+<p>Nun kann ein Bild auf dieser Maske eingefügt werden. Hierzu muss mit <code>Ctrl+A</code> / <code>Cmd+A</code> alles ausgewählt werden, dann mit <code>Ctrl+C</code> / <code>Cmd+C</code> alles kopiert werden und anschliessend mit <code>Ctrl+V</code> / <code>Cmd+V</code>
+alles auf der Maske eingefügt werden. Die Grösse des Bildes kann auf der Maske mit <code>Ctrl+T</code> / <code>Cmd+T</code> angepasst werden.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/copyToMask.gif" alt="copyToMask">
+</div>
+</div>
+<div class="paragraph">
+<p>Mit <code>Ctrl+L</code> / <code>Cmd+L</code> kann anschliessend der Tonwert angepasst werden:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/levels2.gif" alt="levels2">
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_brushes_pinsel">Brushes (Pinsel)</h2>
+<h2 id="_technik_nr_3_fülloptionen">Technik Nr. 3 - Fülloptionen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Jetzt ist es Zeit den Smoke-Effekt hinzuzufügen. Hierzu kann man in Photoshop sogenannte Brushes (Pinsel) einsetzten. Standartmässig sind gewisse Brushes schon installiert, allerdings empfiehlt es sich hier einen Smoke-Brush-Set herunterzuladen.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.brusheezy.com/free/smoke">Brusheezy Smoke Brushes</a> &#8594;
-<a href="https://www.brusheezy.com/brushes/58094-free-smoke-photoshop-brushes">Smoke Brush 58094</a></p>
-</div>
-<div class="paragraph">
-<p>Die Datei muss heruntergeladen und entzippt werden. Anschliessend kann man den Set in Photoshop importieren:</p>
+<p>"Mischen, wenn&#8230;&#8203;" heisst das Zauberwort. Hierzu müssen auf der Textebene die Mischoptionen geöffnet werden. Damit man einen weichen Übergang erhält, müssen die Schieberegler mit gedrückter <code>Alt</code> / <code>Option</code> Taste getrennt werden.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/importBrush.gif" alt="importBrush">
-</div>
-</div>
-<div class="paragraph">
-<p>Bevor der Brush eingesetzt werden kann, muss eine neue Ebene unterhalb des Bildes erstellt werden.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/createLayer.gif" alt="createLayer">
-</div>
-</div>
-<div class="paragraph">
-<p>Auf der neu erstellten Ebene kann nun der Smoke-Effect in der gewünschten Farbe gezeichnet werden. In diesem Beispiel mit weiss. Doch bevor das gemacht wird, muss das Bild verkleinert werden. Hierzu mit <code>Ctrl+T</code> (Windows) bzw. <code>Cmd+T</code> (macOS) das Bild skalieren. Die Grösse des Brushes kann mit einem Rechtsklick &#8594; Grösse angepasst werden. Ausserdem lässt sich in dem Optionen-Fenster des Brushes auch die Ausrichtung definieren.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/drawSmoke.gif" alt="drawSmoke">
-</div>
-</div>
-<div class="paragraph">
-<p>Im nächsten Schritt wird die Ebene mit dem Rauch dupliziert (<code>Ctrl+J</code> / <code>Cmd+J</code>) und transformiert (<code>Ctrl+T</code> / <code>Cmd+T</code>). Damit die Proportionen überschrieben werden können, muss zusätzlich die <code>Shift</code>-Taste gedrückt werden.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/addFloor.gif" alt="addFloor">
+<img src="images/fillOptions.gif" alt="fillOptions">
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ebene_verformen">Ebene Verformen</h2>
+<h2 id="_die_kombination_aus_allen_drei_techniken">Die Kombination aus allen drei Techniken</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Während die Ebene immer noch im Transformieren-Modus ist, kann mit einem Rechtsklick die Option "Verformen" ausgewählt werden. Nun kann die Ebene einfach verformt werden, um so einen Effekt zu kreieren, als würde sich die Figur auf einem runden Boden befinden.</p>
+<p>Mit der Kombination aus allen 3 Techniken können spannende und realistische Effekte erzielt werden:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/warp.gif" alt="warp">
+<img src="images/combination.gif" alt="combination">
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_schatten_hinzufügen">Schatten hinzufügen</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Es gibt verschiedene Möglichkeiten einen Schatten hinzuzufügen. In diesem Beispiel wird ein Schatte mit dem Brush hinzugefügt (auf einer neuen Ebene) und anschliessend transformiert (<code>Ctrl+T</code> / <code>Cmd+T</code>). Die Deckkraft der Ebene wird dann reduziert und anschliessend die gesamte Ebene dupliziert und verschoben.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/addShadow.gif" alt="addShadow">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_textur_hinzufügen">Textur hinzufügen</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Die <a href="https://unsplash.com/photos/PzhmEp_aDU4">Textur</a> soll über das ganze Bild gezogen werden.</p>
-</div>
-<div class="paragraph">
-<p>Anschliessend kann das Mischmodus (Blending-Mode) zu <code>Negativ multiplizieren</code> (Screen) und die Deckkraft zu ungefähr 35% geändert werden.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/addTexture.gif" alt="addTexture">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_fahne_oder_logo_was_auch_immer_du_möchtest_im_rauch_platzieren">Fahne (oder Logo, was auch immer du möchtest) im Rauch platzieren</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>In diesem Beispiel wird eine Schweizerfahne im Hintergrund platziert. Die Fahne muss genau über dem Hintergrundrauch sein um anschliessend eine Schnittmaske zu erstellen.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/addFlag.gif" alt="addFlag">
-</div>
-</div>
-<div class="paragraph">
-<p>TIPP: deaktiviere die Automatische Auswahl damit Photoshop nicht automatisch eine Ebene auswählt</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/automaticSelection.png" alt="automaticSelection">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_zusatz_color_lookup_hinzufügen">Zusatz: Color-Lookup hinzufügen</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Um die Farbe und den "Look" des Posters zu verändern, kann eine Color-Lookup Ebene hinzugefügt werden.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/colorLookup.gif" alt="colorLookup">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_text_hinzufügen">Text hinzufügen</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Mit dem Text-Werkzeug lassen sich Textfelder hinzufügen.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/addText.gif" alt="addText">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_datei_exportieren">Datei exportieren</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Wenn alles abgeschlossen ist, kann das Bild via <code>Datei &#8594; Exportieren &#8594; Exportieren als&#8230;&#8203;</code> exportiert werden.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-08 11:52:33 +0200
+Last updated 2023-05-08 12:35:27 +0200
 </div>
 </div>
 </body>

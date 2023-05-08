@@ -12,13 +12,13 @@ image::images/result.png[]
 
 
 == Neues Dokument erstellen
-Für diese Übung erstellen wir ein neues Dokument mit 3840x2160px (4K) und schwarzem Hintergrund. Die Auflösung von 72ppi kann übernommen werden.
+Für diese Übung musst du ein neues Dokument mit 3840x2160px (4K) und schwarzem Hintergrund erstellen. Die Auflösung von 72ppi kann übernommen werden.
 
 image::images/new_document.png[]
 
 == Text schreiben und Grösse anpassen
 
-Schreibe ein Text deiner Wahl, in diesem Beispiel wird mit dem Wort "DESIGN" in der Schriftart Roboto Black gearbeitet.
+Schreibe ein Text deiner Wahl, in diesem Beispiel wird mit dem Wort `DESIGN` in der Schriftart `Roboto Black` gearbeitet.
 
 Die Grösse kann mit `Ctrl+T` / `Cmd+T` angepasst werden.
 
@@ -27,7 +27,7 @@ image::images/create_text.gif[]
 
 == Technik Nr. 1 - Schnittmaske
 
-Als erstes muss die Textur Concrete.jpg importiert werden.
+Als erstes muss die Textur `Concrete.jpg` importiert werden.
 
 image::images/importConcrete.gif[]
 
@@ -37,7 +37,7 @@ Als nächstes kann die Schnittebene erstellt werden. Diese lässt sich entweder 
 
 image::images/createClippingMask1.gif[]
 
-Oder mit `Alt` / `Option` - Klick zwischen den Ebenen
+Oder mit einem `Alt` / `Option` - Klick zwischen den Ebenen.
 
 image::images/createClippingMask2.gif[]
 
@@ -46,97 +46,41 @@ Um mehr Kontrast zu erhalten, kann die Tonwertkorrektur hilfreich sein (Levels).
 image::images/levels.gif[]
 
 
-Der Vorteil dieser Schnittmaskten-Methode besteht darin, dass alles was über der Hauptebene ist, ebenfalls in die Schnittmaske aufgenommen wird.
-
+Der Vorteil dieser Schnittmasken-Methode besteht darin, dass alles was sich über der Hauptebene befindet, ebenfalls in die Schnittmaske aufgenommen werden kann. So können auch die Modi der einzelnen Ebenen angepasst werden um spezielle Effekte zu erstellen (z.B. Multiplizieren usw.)
 
 image::images/additionalPictures.gif[]
 
+== Technik Nr. 2 - Masken
 
-== Technik Nr. 2
+Als erstes wird ein Hintergrundbild bzw. eine Hintergrundtextur benötigt.
 
-Das Poster soll eine Hintergrundfarbe haben... Dazu muss eine neue Ebene mit einer Farbfüllung erstellt werden.
+image::images/metal.gif[]
 
-image::images/createSolid.gif[]
+Als nächstes musst du die Maske aus der Schrift-Ebene erstellen. Diese kann mit dem Pinsel bearbeitet werden, wobei Weiss die Pixel sichtbar macht und schwarz die Pixel abdeckt.
 
-== Brushes (Pinsel)
+image::images/mask.gif[]
 
-Jetzt ist es Zeit den Smoke-Effekt hinzuzufügen. Hierzu kann man in Photoshop sogenannte Brushes (Pinsel) einsetzten. Standartmässig sind gewisse Brushes schon installiert, allerdings empfiehlt es sich hier einen Smoke-Brush-Set herunterzuladen.
+Die Maske kann aber auch aus einem Bild bestehen, hierzu muss die Maske mit gedrückter `Alt` / `Option` Taste angeklickt werden:
 
-https://www.brusheezy.com/free/smoke[Brusheezy Smoke Brushes] ->
-https://www.brusheezy.com/brushes/58094-free-smoke-photoshop-brushes[Smoke Brush 58094]
+image::images/altMask.gif[]
 
-Die Datei muss heruntergeladen und entzippt werden. Anschliessend kann man den Set in Photoshop importieren:
+Nun kann ein Bild auf dieser Maske eingefügt werden. Hierzu muss mit `Ctrl+A` / `Cmd+A` alles ausgewählt werden, dann mit `Ctrl+C` / `Cmd+C` alles kopiert werden und anschliessend mit `Ctrl+V` / `Cmd+V`
+alles auf der Maske eingefügt werden. Die Grösse des Bildes kann auf der Maske mit `Ctrl+T` / `Cmd+T` angepasst werden.
 
-image::images/importBrush.gif[]
+image::images/copyToMask.gif[]
 
-Bevor der Brush eingesetzt werden kann, muss eine neue Ebene unterhalb des Bildes erstellt werden.
+Mit `Ctrl+L` / `Cmd+L` kann anschliessend der Tonwert angepasst werden:
 
-image::images/createLayer.gif[]
+image::images/levels2.gif[]
 
-Auf der neu erstellten Ebene kann nun der Smoke-Effect in der gewünschten Farbe gezeichnet werden. In diesem Beispiel mit weiss. Doch bevor das gemacht wird, muss das Bild verkleinert werden. Hierzu mit `Ctrl+T` (Windows) bzw. `Cmd+T` (macOS) das Bild skalieren. Die Grösse des Brushes kann mit einem Rechtsklick -> Grösse angepasst werden. Ausserdem lässt sich in dem Optionen-Fenster des Brushes auch die Ausrichtung definieren.
+== Technik Nr. 3 - Fülloptionen
 
-image::images/drawSmoke.gif[]
+"Mischen, wenn..." heisst das Zauberwort. Hierzu müssen auf der Textebene die Mischoptionen geöffnet werden. Damit man einen weichen Übergang erhält, müssen die Schieberegler mit gedrückter `Alt` / `Option` Taste getrennt werden.
 
-Im nächsten Schritt wird die Ebene mit dem Rauch dupliziert (`Ctrl+J` / `Cmd+J`) und transformiert (`Ctrl+T` / `Cmd+T`). Damit die Proportionen überschrieben werden können, muss zusätzlich die `Shift`-Taste gedrückt werden.
+image::images/fillOptions.gif[]
 
-image::images/addFloor.gif[]
+== Die Kombination aus allen drei Techniken
 
-== Ebene Verformen
+Mit der Kombination aus allen 3 Techniken können spannende und realistische Effekte erzielt werden:
 
-Während die Ebene immer noch im Transformieren-Modus ist, kann mit einem Rechtsklick die Option "Verformen" ausgewählt werden. Nun kann die Ebene einfach verformt werden, um so einen Effekt zu kreieren, als würde sich die Figur auf einem runden Boden befinden.
-
-image::images/warp.gif[]
-
-== Schatten hinzufügen
-
-Es gibt verschiedene Möglichkeiten einen Schatten hinzuzufügen. In diesem Beispiel wird ein Schatte mit dem Brush hinzugefügt (auf einer neuen Ebene) und anschliessend transformiert (`Ctrl+T` / `Cmd+T`). Die Deckkraft der Ebene wird dann reduziert und anschliessend die gesamte Ebene dupliziert und verschoben.
-
-image::images/addShadow.gif[]
-
-== Textur hinzufügen
-
-Die https://unsplash.com/photos/PzhmEp_aDU4[Textur] soll über das ganze Bild gezogen werden.
-
-Anschliessend kann das Mischmodus (Blending-Mode) zu `Negativ multiplizieren` (Screen) und die Deckkraft zu ungefähr 35% geändert werden.
-
-image::images/addTexture.gif[]
-
-== Fahne (oder Logo, was auch immer du möchtest) im Rauch platzieren
-
-In diesem Beispiel wird eine Schweizerfahne im Hintergrund platziert. Die Fahne muss genau über dem Hintergrundrauch sein um anschliessend eine Schnittmaske zu erstellen.
-
-image::images/addFlag.gif[]
-
-
-TIPP: deaktiviere die Automatische Auswahl damit Photoshop nicht automatisch eine Ebene auswählt
-
-image::images/automaticSelection.png[]
-
-== Zusatz: Color-Lookup hinzufügen
-
-Um die Farbe und den "Look" des Posters zu verändern, kann eine Color-Lookup Ebene hinzugefügt werden.
-
-image::images/colorLookup.gif[]
-
-== Text hinzufügen
-
-Mit dem Text-Werkzeug lassen sich Textfelder hinzufügen.
-
-image::images/addText.gif[]
-
-== Datei exportieren
-
-Wenn alles abgeschlossen ist, kann das Bild via `Datei -> Exportieren -> Exportieren als...` exportiert werden.
-
-
-
-
-
-
-
-
-
-
-
-
-
+image::images/combination.gif[]
