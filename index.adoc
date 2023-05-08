@@ -1,0 +1,133 @@
+= Texturen Tutorial
+Cla Tschenett <cla.tschenett@ibw.ch>
+1.0 - 08.05.2023
+:toc:
+:toc-title: Inhaltsverzeichnis
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+In diesem Tutorial geht es darum, verschiedene Techniken in Zusammenhang mit Texturen in Photoshop zu erlernen.
+
+image::images/result.png[]
+
+
+== Neues Dokument erstellen
+Für diese Übung erstellen wir ein neues Dokument mit 3840x2160px (4K) und schwarzem Hintergrund. Die Auflösung von 72ppi kann übernommen werden.
+
+image::images/new_document.png[]
+
+== Text schreiben und Grösse anpassen
+
+Schreibe ein Text deiner Wahl, in diesem Beispiel wird mit dem Wort "DESIGN" in der Schriftart Roboto Black gearbeitet.
+
+Die Grösse kann mit `Ctrl+T` / `Cmd+T` angepasst werden.
+
+image::images/create_text.gif[]
+
+
+== Technik Nr. 1
+
+Um die Auswahl zu bearbeiten, kann eine Maske unter Ebenen erstellt werden.
+
+image::images/createMask.gif[]
+
+Die Ebene hat nun zusätzlich eine Maske, welche bearbeitet werden kann. Schwarz bedeutet, dass die Pixel maskiert sind, also "versteckt" und weiss, dass die Pixel sichtbar sind.
+
+image::images/mask.png[]
+
+Dies bedeutet, dass die Maske z.B. auch mit dem `Pinselwerkzeug (B)` bearbeitet werden kann. Am besten öffnet man hierzu die Maske mit einem Doppelklick. Anschliessend kann die Maske angepasst werden.
+
+
+image::images/editMask.gif[]
+
+Das Pinselwerkzeug kann mit einem Rechtsklick angepasst werden (Härte, Grösse). Sobald du mit dem Resultat zufrieden bist, kanns du mit OK zurück zum Hauptdokument gelangen.
+
+
+== Hintergrundfarbe hinzufügen
+
+Das Poster soll eine Hintergrundfarbe haben... Dazu muss eine neue Ebene mit einer Farbfüllung erstellt werden.
+
+image::images/createSolid.gif[]
+
+== Brushes (Pinsel)
+
+Jetzt ist es Zeit den Smoke-Effekt hinzuzufügen. Hierzu kann man in Photoshop sogenannte Brushes (Pinsel) einsetzten. Standartmässig sind gewisse Brushes schon installiert, allerdings empfiehlt es sich hier einen Smoke-Brush-Set herunterzuladen.
+
+https://www.brusheezy.com/free/smoke[Brusheezy Smoke Brushes] ->
+https://www.brusheezy.com/brushes/58094-free-smoke-photoshop-brushes[Smoke Brush 58094]
+
+Die Datei muss heruntergeladen und entzippt werden. Anschliessend kann man den Set in Photoshop importieren:
+
+image::images/importBrush.gif[]
+
+Bevor der Brush eingesetzt werden kann, muss eine neue Ebene unterhalb des Bildes erstellt werden.
+
+image::images/createLayer.gif[]
+
+Auf der neu erstellten Ebene kann nun der Smoke-Effect in der gewünschten Farbe gezeichnet werden. In diesem Beispiel mit weiss. Doch bevor das gemacht wird, muss das Bild verkleinert werden. Hierzu mit `Ctrl+T` (Windows) bzw. `Cmd+T` (macOS) das Bild skalieren. Die Grösse des Brushes kann mit einem Rechtsklick -> Grösse angepasst werden. Ausserdem lässt sich in dem Optionen-Fenster des Brushes auch die Ausrichtung definieren.
+
+image::images/drawSmoke.gif[]
+
+Im nächsten Schritt wird die Ebene mit dem Rauch dupliziert (`Ctrl+J` / `Cmd+J`) und transformiert (`Ctrl+T` / `Cmd+T`). Damit die Proportionen überschrieben werden können, muss zusätzlich die `Shift`-Taste gedrückt werden.
+
+image::images/addFloor.gif[]
+
+== Ebene Verformen
+
+Während die Ebene immer noch im Transformieren-Modus ist, kann mit einem Rechtsklick die Option "Verformen" ausgewählt werden. Nun kann die Ebene einfach verformt werden, um so einen Effekt zu kreieren, als würde sich die Figur auf einem runden Boden befinden.
+
+image::images/warp.gif[]
+
+== Schatten hinzufügen
+
+Es gibt verschiedene Möglichkeiten einen Schatten hinzuzufügen. In diesem Beispiel wird ein Schatte mit dem Brush hinzugefügt (auf einer neuen Ebene) und anschliessend transformiert (`Ctrl+T` / `Cmd+T`). Die Deckkraft der Ebene wird dann reduziert und anschliessend die gesamte Ebene dupliziert und verschoben.
+
+image::images/addShadow.gif[]
+
+== Textur hinzufügen
+
+Die https://unsplash.com/photos/PzhmEp_aDU4[Textur] soll über das ganze Bild gezogen werden.
+
+Anschliessend kann das Mischmodus (Blending-Mode) zu `Negativ multiplizieren` (Screen) und die Deckkraft zu ungefähr 35% geändert werden.
+
+image::images/addTexture.gif[]
+
+== Fahne (oder Logo, was auch immer du möchtest) im Rauch platzieren
+
+In diesem Beispiel wird eine Schweizerfahne im Hintergrund platziert. Die Fahne muss genau über dem Hintergrundrauch sein um anschliessend eine Schnittmaske zu erstellen.
+
+image::images/addFlag.gif[]
+
+
+TIPP: deaktiviere die Automatische Auswahl damit Photoshop nicht automatisch eine Ebene auswählt
+
+image::images/automaticSelection.png[]
+
+== Zusatz: Color-Lookup hinzufügen
+
+Um die Farbe und den "Look" des Posters zu verändern, kann eine Color-Lookup Ebene hinzugefügt werden.
+
+image::images/colorLookup.gif[]
+
+== Text hinzufügen
+
+Mit dem Text-Werkzeug lassen sich Textfelder hinzufügen.
+
+image::images/addText.gif[]
+
+== Datei exportieren
+
+Wenn alles abgeschlossen ist, kann das Bild via `Datei -> Exportieren -> Exportieren als...` exportiert werden.
+
+
+
+
+
+
+
+
+
+
+
+
+
