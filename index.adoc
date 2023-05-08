@@ -25,25 +25,34 @@ Die Grösse kann mit `Ctrl+T` / `Cmd+T` angepasst werden.
 image::images/create_text.gif[]
 
 
-== Technik Nr. 1
+== Technik Nr. 1 - Schnittmaske
 
-Um die Auswahl zu bearbeiten, kann eine Maske unter Ebenen erstellt werden.
+Als erstes muss die Textur Concrete.jpg importiert werden.
 
-image::images/createMask.gif[]
+image::images/importConcrete.gif[]
 
-Die Ebene hat nun zusätzlich eine Maske, welche bearbeitet werden kann. Schwarz bedeutet, dass die Pixel maskiert sind, also "versteckt" und weiss, dass die Pixel sichtbar sind.
+Die Ebene mit der Betontextur ist nun zuoberst in der Ebenenstruktur.
 
-image::images/mask.png[]
+Als nächstes kann die Schnittebene erstellt werden. Diese lässt sich entweder mit Rechtsklick auf der Ebene mit der Betontextur erstellen:
 
-Dies bedeutet, dass die Maske z.B. auch mit dem `Pinselwerkzeug (B)` bearbeitet werden kann. Am besten öffnet man hierzu die Maske mit einem Doppelklick. Anschliessend kann die Maske angepasst werden.
+image::images/createClippingMask1.gif[]
+
+Oder mit `Alt` / `Option` - Klick zwischen den Ebenen
+
+image::images/createClippingMask2.gif[]
+
+Um mehr Kontrast zu erhalten, kann die Tonwertkorrektur hilfreich sein (Levels). Hierzu bei ausgewählter Betontextur-Ebene `Ctrl+L` / `Cmd+L` drücken und die Werte anpassen bis das Bild den gewünschten Kontrast hat.
+
+image::images/levels.gif[]
 
 
-image::images/editMask.gif[]
-
-Das Pinselwerkzeug kann mit einem Rechtsklick angepasst werden (Härte, Grösse). Sobald du mit dem Resultat zufrieden bist, kanns du mit OK zurück zum Hauptdokument gelangen.
+Der Vorteil dieser Schnittmaskten-Methode besteht darin, dass alles was über der Hauptebene ist, ebenfalls in die Schnittmaske aufgenommen wird.
 
 
-== Hintergrundfarbe hinzufügen
+image::images/additionalPictures.gif[]
+
+
+== Technik Nr. 2
 
 Das Poster soll eine Hintergrundfarbe haben... Dazu muss eine neue Ebene mit einer Farbfüllung erstellt werden.
 
