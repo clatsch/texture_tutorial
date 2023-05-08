@@ -6,17 +6,17 @@ Cla Tschenett <cla.tschenett@ibw.ch>
 :icons: font
 :url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 
-In diesem Tutorial geht es darum, verschiedene Techniken in Zusammenhang mit Texturen in Photoshop zu erlernen.
+Willkommen zum Texturen-Tutorial! In diesem Tutorial wirst du verschiedene Techniken in Photoshop kennenlernen, mit denen du Grunge-Effekte auf Schrift und Hintergründen erzeugen kannst. Wir werden uns mit Masken, Schnittmasken und Fülloptionen auseinandersetzen und du wirst sehen, wie du durch Kombination dieser Techniken realistische und spannende Effekte erzielen kannst. Folge den Schritten und lerne, wie du deine Designs mit Texturen auf ein neues Level heben kannst.
 
 image::images/result.png[]
 
 
-== Neues Dokument erstellen
-Für diese Übung musst du ein neues Dokument mit 3840x2160px (4K) und schwarzem Hintergrund erstellen. Die Auflösung von 72ppi kann übernommen werden.
+== Schritt 1: Erstellen eines neuen Dokuments
+Um mit diesem Tutorial zu beginnen, öffne zunächst Photoshop und erstelle ein neues Dokument mit den Maßen 3840x2160px (4K) und einem schwarzen Hintergrund. Die Auflösung von 72ppi kann übernommen werden.
 
 image::images/new_document.png[]
 
-== Text schreiben und Grösse anpassen
+== Schritt 2: Text erstellen und Grösse anpassen
 
 Schreibe ein Text deiner Wahl, in diesem Beispiel wird mit dem Wort `DESIGN` in der Schriftart `Roboto Black` gearbeitet.
 
@@ -25,7 +25,7 @@ Die Grösse kann mit `Ctrl+T` / `Cmd+T` angepasst werden.
 image::images/create_text.gif[]
 
 
-== Technik Nr. 1 - Schnittmaske
+== Schritt 3: Technik Nr. 1 - Schnittmaske
 
 Als erstes muss die Textur `Concrete.jpg` importiert werden.
 
@@ -50,7 +50,7 @@ Der Vorteil dieser Schnittmasken-Methode besteht darin, dass alles was sich übe
 
 image::images/additionalPictures.gif[]
 
-== Technik Nr. 2 - Masken
+== Schritt 4: Technik Nr. 2 - Masken
 
 Als erstes wird ein Hintergrundbild bzw. eine Hintergrundtextur benötigt.
 
@@ -73,14 +73,14 @@ Mit `Ctrl+L` / `Cmd+L` kann anschliessend der Tonwert angepasst werden:
 
 image::images/levels2.gif[]
 
-== Technik Nr. 3 - Fülloptionen
+== Schritt 5: Technik Nr. 3 - Fülloptionen
 
 "Mischen, wenn..." heisst das Zauberwort. Hierzu müssen auf der Textebene die Mischoptionen geöffnet werden. Damit man einen weichen Übergang erhält, müssen die Schieberegler mit gedrückter `Alt` / `Option` Taste getrennt werden.
 
 image::images/fillOptions.gif[]
 
-== Die Kombination aus allen drei Techniken
+== Schritt 6: Die Kombination aus allen drei Techniken
 
-Mit der Kombination aus allen 3 Techniken können spannende und realistische Effekte erzielt werden:
+Durch die Kombination aller drei Techniken können spannende und realistische Effekte erzielt werden. Experimentiere und spiele mit den verschiedenen Einstellungen und Optionen, um deinem Design das gewünschte Aussehen zu verpassen.
 
 image::images/combination.gif[]
