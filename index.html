@@ -451,8 +451,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_neues_dokument_erstellen">Neues Dokument erstellen</a></li>
 <li><a href="#_text_schreiben_und_grösse_anpassen">Text schreiben und Grösse anpassen</a></li>
-<li><a href="#_technik_nr_1">Technik Nr. 1</a></li>
-<li><a href="#_hintergrundfarbe_hinzufügen">Hintergrundfarbe hinzufügen</a></li>
+<li><a href="#_technik_nr_1_schnittmaske">Technik Nr. 1 - Schnittmaske</a></li>
+<li><a href="#_technik_nr_2">Technik Nr. 2</a></li>
 <li><a href="#_brushes_pinsel">Brushes (Pinsel)</a></li>
 <li><a href="#_ebene_verformen">Ebene Verformen</a></li>
 <li><a href="#_schatten_hinzufügen">Schatten hinzufügen</a></li>
@@ -507,39 +507,55 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_technik_nr_1">Technik Nr. 1</h2>
+<h2 id="_technik_nr_1_schnittmaske">Technik Nr. 1 - Schnittmaske</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Um die Auswahl zu bearbeiten, kann eine Maske unter Ebenen erstellt werden.</p>
+<p>Als erstes muss die Textur Concrete.jpg importiert werden.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/createMask.gif" alt="createMask">
+<img src="images/importConcrete.gif" alt="importConcrete">
 </div>
 </div>
 <div class="paragraph">
-<p>Die Ebene hat nun zusätzlich eine Maske, welche bearbeitet werden kann. Schwarz bedeutet, dass die Pixel maskiert sind, also "versteckt" und weiss, dass die Pixel sichtbar sind.</p>
+<p>Die Ebene mit der Betontextur ist nun zuoberst in der Ebenenstruktur.</p>
+</div>
+<div class="paragraph">
+<p>Als nächstes kann die Schnittebene erstellt werden. Diese lässt sich entweder mit Rechtsklick auf der Ebene mit der Betontextur erstellen:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/mask.png" alt="mask">
+<img src="images/createClippingMask1.gif" alt="createClippingMask1">
 </div>
 </div>
 <div class="paragraph">
-<p>Dies bedeutet, dass die Maske z.B. auch mit dem <code>Pinselwerkzeug (B)</code> bearbeitet werden kann. Am besten öffnet man hierzu die Maske mit einem Doppelklick. Anschliessend kann die Maske angepasst werden.</p>
+<p>Oder mit <code>Alt</code> / <code>Option</code> - Klick zwischen den Ebenen</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/editMask.gif" alt="editMask">
+<img src="images/createClippingMask2.gif" alt="createClippingMask2">
 </div>
 </div>
 <div class="paragraph">
-<p>Das Pinselwerkzeug kann mit einem Rechtsklick angepasst werden (Härte, Grösse). Sobald du mit dem Resultat zufrieden bist, kanns du mit OK zurück zum Hauptdokument gelangen.</p>
+<p>Um mehr Kontrast zu erhalten, kann die Tonwertkorrektur hilfreich sein (Levels). Hierzu bei ausgewählter Betontextur-Ebene <code>Ctrl+L</code> / <code>Cmd+L</code> drücken und die Werte anpassen bis das Bild den gewünschten Kontrast hat.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/levels.gif" alt="levels">
+</div>
+</div>
+<div class="paragraph">
+<p>Der Vorteil dieser Schnittmaskten-Methode besteht darin, dass alles was über der Hauptebene ist, ebenfalls in die Schnittmaske aufgenommen wird.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/additionalPictures.gif" alt="additionalPictures">
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_hintergrundfarbe_hinzufügen">Hintergrundfarbe hinzufügen</h2>
+<h2 id="_technik_nr_2">Technik Nr. 2</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Das Poster soll eine Hintergrundfarbe haben&#8230;&#8203; Dazu muss eine neue Ebene mit einer Farbfüllung erstellt werden.</p>
@@ -695,7 +711,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-08 11:30:12 +0200
+Last updated 2023-05-08 11:52:33 +0200
 </div>
 </div>
 </body>
