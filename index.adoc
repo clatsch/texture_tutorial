@@ -1,6 +1,6 @@
 = Texturen Tutorial
 Cla Tschenett <cla.tschenett@ibw.ch>
-1.0 - 10.03.2025
+1.1 - 10.03.2025
 :toc:
 :toc-title: Inhaltsverzeichnis
 :icons: font
