@@ -1,6 +1,6 @@
 = Texturen Tutorial
 Cla Tschenett <cla.tschenett@ibw.ch>
-1.0 - 08.05.2023
+1.0 - 10.03.2025
 :toc:
 :toc-title: Inhaltsverzeichnis
 :icons: font
@@ -12,7 +12,7 @@ image::images/result.png[]
 
 
 == Schritt 1: Erstellen eines neuen Dokuments
-Um mit diesem Tutorial zu beginnen, öffne zunächst Photoshop und erstelle ein neues Dokument mit den Maßen 3840x2160px (4K) und einem schwarzen Hintergrund. Die Auflösung von 72ppi kann übernommen werden.
+Um mit diesem Tutorial zu beginnen, öffne zunächst Photoshop und erstelle ein neues Dokument mit den Massen 3840x2160px (4K) und einem schwarzen Hintergrund. Die Auflösung von 72ppi kann übernommen werden.
 
 image::images/new_document.png[]
 
